@@ -4,6 +4,7 @@ import DrinkOrder from './DrinkOrder';
 
 
 
+
 function Drink(props) {
   return (
     <div>    
@@ -11,7 +12,8 @@ function Drink(props) {
         <p>{props.name}</p>
         <p>{props.price}$</p>
         <p>{props.alcohol}%</p> 
-        <div>       
+        <div>
+        <p>How Many?</p>     
           <DrinkOrder/>
         </div>
         

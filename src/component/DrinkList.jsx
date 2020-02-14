@@ -1,7 +1,6 @@
 import React from "react";
 import Drink from './Drink';
 import { Link } from 'react-router-dom';
-import DrinkOrder from './DrinkOrder';
 
 
 const mainDrinkList = [

@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+
 
 class DrinkOrder extends React.Component {
     state = {
         order: 0
     };
-
+    
     incrementOrder = () => {
         this.setState( prevState =>  ({           
                 order: prevState.order + 1         
@@ -30,7 +30,9 @@ class DrinkOrder extends React.Component {
                 <button onClick={this.incrementOrder}>+</button>
             </div>
         );
+        
     }
+    
 }
 
 export default DrinkOrder;
