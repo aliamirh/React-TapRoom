@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./component/Header.jsx";
 import { Switch, Route } from 'react-router-dom';
-import Drink from "./component/Drink";
+import DrinkList from "./component/DrinkList";
 
 
 
@@ -10,9 +10,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      
         <Switch>
-        <Route exect path='/' component={Header} />
-        <Route expect path='/Drink' component={Drink} />
+        <Route exact path='/' component={Header} />
+        <Route exact path='/drinklist' component={DrinkList} />
         </Switch>
       </header>
     </div>

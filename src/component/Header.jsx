@@ -1,5 +1,5 @@
 import React from "react";
-import DrinkList from '/component/DrinkList';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
