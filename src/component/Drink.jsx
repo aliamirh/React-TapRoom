@@ -1,4 +1,6 @@
 import React from "react";
+import DrinkOrder from './DrinkOrder';
+
 
 
 
@@ -9,6 +11,11 @@ function Drink(props) {
         <p>{props.name}</p>
         <p>{props.price}$</p>
         <p>{props.alcohol}%</p> 
+        <div>       
+          <DrinkOrder/>
+        </div>
+        
+        
     
     </div>
   );

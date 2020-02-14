@@ -12,9 +12,15 @@ class DrinkOrder extends React.Component {
         }));
     }
     decrementOrder = () => {
-        this.setState( prevState => ({
-                order: prevState.order -1,     
-        }));
+        if(this.state.order <= 0){
+            this.setState({
+                order: 0
+            });
+        }else{
+            this.setState( prevState => ({
+                    order: prevState.order -1,     
+            }));
+        }
     }
     render(){
         return (
@@ -22,7 +28,6 @@ class DrinkOrder extends React.Component {
                 <button onClick={this.decrementOrder}>-</button>
                 <span>{this.state.order}</span>
                 <button onClick={this.incrementOrder}>+</button>
-                <div><Link to='/'>Home</Link></div>
             </div>
         );
     }

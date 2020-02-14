@@ -1,6 +1,7 @@
 import React from "react";
 import Drink from './Drink';
 import { Link } from 'react-router-dom';
+import DrinkOrder from './DrinkOrder';
 
 
 const mainDrinkList = [
@@ -43,7 +44,6 @@ function DrinkList() {
       </div>
       <div>
         <Link to='/'>Home</Link>
-        <Link to='/drinkorder'>Order</Link>
       </div>
     </div>
   );
