@@ -29,8 +29,10 @@ class DrinkOrder extends React.Component {
 
     formatOrder(){
         const { order } = this.state;
-        return order === 0 ? 'Zero' : order;
-
+        return order === 0 ? <span style={{color:'red'}}>Zero</span> 
+        : order >=5 ?  <span style={{color:'green'}}>{this.state.order}</span> :order;
+        
+    
     }
 
     formatWord(){

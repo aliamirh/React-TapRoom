@@ -6,7 +6,7 @@ function Header() {
     <div>
       <h3>The Tap Room</h3>
       <p>Come on in and drink up!</p>
-      <Link to='/DrinkList'>Drinks</Link> | <Link to='/DrinkOrder'>Order</Link> 
+      <Link to='/DrinkList'>Drinks</Link>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./component/Header.jsx";
 import { Switch, Route } from 'react-router-dom';
 import DrinkList from "./component/DrinkList";
-import DrinkOrder from "./component/DrinkOrder";
+
 
 
 
@@ -14,7 +14,6 @@ function App() {
         <Switch>
         <Route exact path='/' component={Header} />
         <Route exact path='/drinklist' component={DrinkList} />
-        <Route exact path='/drinkorder' component={DrinkOrder} />
         </Switch>
       </header>
     </div>
