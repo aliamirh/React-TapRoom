@@ -1,6 +1,10 @@
 import React from "react";
 
 
+
+
+
+
 class DrinkOrder extends React.Component {
     state = {
         order: 0
@@ -25,9 +29,13 @@ class DrinkOrder extends React.Component {
     render(){
         return (
             <div>
+                
                 <button onClick={this.decrementOrder}>-</button>
                 <span>{this.state.order}</span>
                 <button onClick={this.incrementOrder}>+</button>
+                <div>
+                <p>You have {this.state.order} order(s) of </p>
+                </div>
             </div>
         );
         

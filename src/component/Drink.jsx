@@ -13,7 +13,6 @@ function Drink(props) {
         <p>{props.price}$</p>
         <p>{props.alcohol}%</p> 
         <div>
-        <p>How Many?</p>     
           <DrinkOrder/>
         </div>
         
