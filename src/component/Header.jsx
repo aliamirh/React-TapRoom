@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <div>
-      <h3>Tap Room</h3>
+      <h3>The Tap Room</h3>
       <p>Come on in and drink up!</p>
-      <Link to='/DrinkList'>Drinks</Link>
-      
+      <Link to='/DrinkList'>Drinks</Link> | <Link to='/DrinkOrder'>Order</Link> 
     </div>
   );
 }
