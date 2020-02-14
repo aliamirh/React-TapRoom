@@ -26,6 +26,18 @@ class DrinkOrder extends React.Component {
             }));
         }
     }
+
+    formatOrder(){
+        const { order } = this.state;
+        return order === 0 ? 'Zero' : order;
+
+    }
+
+    formatWord(){
+ 
+        const { order } = this.state;
+        return  order === 1 ? 'Order' :'Orders';
+    }
     render(){
         return (
             <div>
@@ -34,7 +46,7 @@ class DrinkOrder extends React.Component {
                 <span>{this.state.order}</span>
                 <button onClick={this.incrementOrder}>+</button>
                 <div>
-                <p>You have {this.state.order} order(s) of </p>
+                <p>You have {this.formatOrder()} {this.formatWord()}.</p>
                 </div>
             </div>
         );
