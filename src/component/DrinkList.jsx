@@ -6,7 +6,7 @@ const mainDrinkList = [
     name: "CoreLite",
     brand: "Core",
     price: 3,
-    alcohol: 2
+    alcohol: 2.3
   },
 
   {
