@@ -1,6 +1,7 @@
 import React from "react";
 import Drink from './Drink';
 import { Link } from 'react-router-dom';
+import PropTypes from "prop-types";
 
 
 const mainDrinkList = [
@@ -27,9 +28,15 @@ const mainDrinkList = [
 ];
 
 function DrinkList() {
+
+  var Links = {
+    color: 'white',
+    fontWeight:'bold'
+  }
+  
   return (
     <div>
-      <h3>Menue</h3>
+      <h3>Menu</h3>
       <div>
         {mainDrinkList.map((drink, index) => 
           <Drink
@@ -42,10 +49,16 @@ function DrinkList() {
         )}
       </div>
       <div>
-        <Link to='/'>Home</Link>
+        <Link to='/' style = {Links}>Home</Link>
       </div>
     </div>
   );
 }
 
+DrinkList.propTypes = {
+  name: PropTypes.string.isRequired,
+  brand: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  alcohol: PropTypes.number.isRequired
+}
 export default DrinkList;

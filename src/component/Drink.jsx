@@ -6,7 +6,7 @@ function Drink(props) {
   
   var OrderBox = {
     border: '2px solid black',
-    backgroundColor: 'lightblue',
+    backgroundColor: '#445b6e',
     borderRadius:30,
     padding:'5px'
 
@@ -16,8 +16,9 @@ var menueContainer = {
   border: '2px solid black',
   float:'right',
   padding:'10px',
-  backgroundColor:'darkgray',
+  backgroundColor:'#384652',
   borderRadius:30
+
 }
 
 
@@ -30,9 +31,6 @@ var menueContainer = {
         <div style = {OrderBox}>
           <DrinkOrder/>
         </div>
-        
-        
-    
     </div>
   );
 }
