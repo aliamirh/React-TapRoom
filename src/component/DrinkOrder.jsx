@@ -1,10 +1,6 @@
 import React from "react";
 
 
-
-
-
-
 class DrinkOrder extends React.Component {
     state = {
         order: 0
