@@ -37,6 +37,7 @@ class DrinkOrder extends React.Component {
     return order === 1 ? 'Order' : 'Orders';
   }
 
+
   render() {
     return (
       <div>

@@ -56,9 +56,9 @@ function DrinkList() {
 }
 
 DrinkList.propTypes = {
-  name: PropTypes.string.isRequired,
-  brand: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-  alcohol: PropTypes.number.isRequired
+  name: PropTypes.string,
+  brand: PropTypes.string,
+  price: PropTypes.number,
+  alcohol: PropTypes.number
 };
 export default DrinkList;

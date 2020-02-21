@@ -1,5 +1,6 @@
 import React from 'react';
 import DrinkOrder from './DrinkOrder';
+import OrderTotal from './OrderTotal';
 
 function Drink(props) {
   var OrderBox = {
@@ -26,6 +27,7 @@ function Drink(props) {
       <div style={OrderBox}>
         <DrinkOrder />
       </div>
+      <OrderTotal />
     </div>
   );
 }
