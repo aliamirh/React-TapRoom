@@ -1,13 +1,13 @@
 import React from 'react';
 
-function NewTap(){
+function NewDrink(){
 
     let _brand = null;
     let _drinkName = null;
     let _cost = null;
     let _alcohol = null;
     
-    function handleNewTapSubmission(event) {
+    function handleNewDrinkSubmission(event) {
         event.preventDefault();
         _brand.value = ''
         _drinkName.value = ''
@@ -17,7 +17,7 @@ function NewTap(){
 
     return (
       <div>
-        <form onSubmit={handleNewTapSubmission}>
+        <form onSubmit={handleNewDrinkSubmission}>
           <input
             type='text'
             id='brand'
@@ -49,4 +49,4 @@ function NewTap(){
   }
  
 
-export default NewTap;
+export default NewDrink;

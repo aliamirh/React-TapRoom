@@ -47,8 +47,9 @@ function DrinkList() {
         ))}
       </div>
       <div>
-        <Link to='/' style={Links}>Home |</Link>
-        <Link to='/drinkorder' style={Links}> Order</Link>
+        <Link to='/' style={Links}>
+          Home
+        </Link>
       </div>
     </div>
   );
