@@ -2,26 +2,7 @@ import React from "react";
 
 
 class DrinkOrder extends React.Component {
-    state = {
-        order: 0
-    };
-    
-    incrementOrder = () => {
-        this.setState( prevState =>  ({           
-                order: prevState.order + 1         
-        }));
-    }
-    decrementOrder = () => {
-        if(this.state.order <= 0){
-            this.setState({
-                order: 0
-            });
-        }else{
-            this.setState( prevState => ({
-                    order: prevState.order -1,     
-            }));
-        }
-    }
+
 
     formatOrder(){
         const { order } = this.state;
