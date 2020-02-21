@@ -1,9 +1,9 @@
 import React from 'react';
 
 class DrinkOrder extends React.Component {
-  state = {
-    order: 0
-  };
+//   state = {
+//     order: 0
+//   };
 
 //   handleIncrementOrder = () => {
 //     this.setState(prevState => ({
@@ -22,33 +22,29 @@ class DrinkOrder extends React.Component {
 //     }
 //   };
 
-  formatOrder() {
-    const { order } = this.state;
-    return order === 0 ? (
-      <span style={{ color: 'red' }}>Zero</span>
-    ) : order >= 5 ? (
-      <span style={{ color: 'green' }}>{this.state.order}</span>
-    ) : (
-      order
-    );
-  }
-  formatWord() {
-    const { order } = this.state;
-    return order === 1 ? 'Order' : 'Orders';
-  }
+//   formatOrder() {
+//     const { order } = this.state;
+//     return order === 0 ? (
+//       <span style={{ color: 'red' }}>Zero</span>
+//     ) : order >= 5 ? (
+//       <span style={{ color: 'green' }}>{this.state.order}</span>
+//     ) : (
+//       order
+//     );
+//   }
+//   formatWord() {
+//     const { order } = this.state;
+//     return order === 1 ? 'Order' : 'Orders';
+//   }
 
 
   render() {
     return (
       <div>
-        <button onClick={this.handleDecrementOrder}>-</button>
-        <span>{this.state.order}</span>
-        <button onClick={this.handleIncrementOrder}>+</button>
-        <div>
-          <p>
-            You have {this.formatOrder()} {this.formatWord()}.
-          </p>
-        </div>
+        <button onClick={this.props.orderDecrement}>-</button>
+        <span>order:{this.props.order}</span>
+        <button onClick={this.props.orderIncrement}>+</button>
+     
       </div>
     );
   }

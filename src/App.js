@@ -5,9 +5,12 @@ import { Switch, Route } from 'react-router-dom';
 import DrinkList from './component/DrinkList';
 
 class App extends React.Component {
-
-
+    state = {
+      order: 0
+    };
+  
   handleIncrementOrder = () => {
+
     this.setState(prevState => ({
       order: prevState.order + 1
     }));
@@ -29,7 +32,7 @@ class App extends React.Component {
         <header className='App-header'>
           <Switch>
             <Route exact path='/' component={Header} />
-            <Route exact path='/drinklist' render={() => <DrinkList orderUpdate={this.handleIncrementOrder} />} 
+            <Route exact path='/drinklist' render={() => <DrinkList order={this.state.order} orderIncrement={this.handleIncrementOrder} orderDecrement={this.handleDecrementOrder} />} 
 
             />
           </Switch>
