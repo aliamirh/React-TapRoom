@@ -21,7 +21,6 @@ var menueContainer = {
 
 }
 
-
   return (
     <div style = {menueContainer}>    
         <h4>Brand: {props.brand}</h4>
