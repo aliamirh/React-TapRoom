@@ -1,6 +1,5 @@
 import React from 'react';
-import DrinkOrder from './DrinkOrder';
-import { Link } from 'react-router-dom';
+
 
 function Drink(props) {
   var OrderBox = {
@@ -23,10 +22,7 @@ function Drink(props) {
       <h4>Brand: {props.brand}</h4>
       <p>Drink Name: {props.name}</p>
       <p>{props.price}$</p>
-      <p>Alcohol percentage: {props.alcohol}%</p>
-      <Link to='/drinkorder' >
-          <span>Order</span>
-        </Link>
+      <p>Alcohol percentage: {props.alcohol}%</p>  
     </div>
   );
 }
