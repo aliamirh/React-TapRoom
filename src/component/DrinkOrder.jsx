@@ -5,22 +5,22 @@ class DrinkOrder extends React.Component {
     order: 0
   };
 
-  handleIncrementOrder = () => {
-    this.setState(prevState => ({
-      order: prevState.order + 1
-    }));
-  };
-  handleDecrementOrder = () => {
-    if (this.state.order <= 0) {
-      this.setState({
-        order: 0
-      });
-    } else {
-      this.setState(prevState => ({
-        order: prevState.order - 1
-      }));
-    }
-  };
+//   handleIncrementOrder = () => {
+//     this.setState(prevState => ({
+//       order: prevState.order + 1
+//     }));
+//   };
+//   handleDecrementOrder = () => {
+//     if (this.state.order <= 0) {
+//       this.setState({
+//         order: 0
+//       });
+//     } else {
+//       this.setState(prevState => ({
+//         order: prevState.order - 1
+//       }));
+//     }
+//   };
 
   formatOrder() {
     const { order } = this.state;
