@@ -6,7 +6,7 @@
 
 ## Description
 
-_A beginning website for a brewery. It will dynamically update the amount of beverages you choose and depening on the amount it will change the number from red to green.  _
+_A beginning website for a brewery that allows a user to create their own drink. It will dynamically update the amount of beverages you choose and depening on the amount it will change the number from red to green .  _
 
 ## Setup/Installation Requirements
 

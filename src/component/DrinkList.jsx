@@ -28,7 +28,7 @@ function DrinkList(props) {
       </div>
       <div>
         <Link to='/newdrinkcontrol' style={Links}>
-          Make another
+          Make a Drink
         </Link>
       </div>
     </div>
