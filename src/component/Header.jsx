@@ -11,7 +11,7 @@ function Header() {
     <div>
       <h3>The Tap Room</h3>
       <p>Come on in!</p>
-      <Link to='/DrinkList'>
+      <Link to='/drinklist'>
         <span style={Links}>Drinks</span>
       </Link>
     </div>
